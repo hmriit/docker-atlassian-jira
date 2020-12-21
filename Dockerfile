@@ -33,7 +33,8 @@ RUN set -x \
 # Use the default unprivileged account. This could be considered bad practice
 # on systems where multiple processes end up being executed by 'daemon' but
 # here we only ever run one process anyway.
-USER daemon:daemon
+#USER daemon:daemon
+User root
 
 # Expose default HTTP connector port.
 EXPOSE 8080
